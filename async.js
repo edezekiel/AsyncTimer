@@ -2,6 +2,7 @@ let button = document.querySelector("button")
 
 let secondsInput = document.querySelector("input")
 
+// parse input into an integer
 button.addEventListener('click',  () => asyncCall(parseInt(secondsInput.value)))
 
 let remaining = document.querySelector("#remaining")

@@ -7,6 +7,7 @@ button.addEventListener('click',  () => asyncCall(parseInt(secondsInput.value)))
 
 let remaining = document.querySelector("#remaining")
 
+// this fn is called each iteration
 function resolveAfter1Second() {
   return new Promise(resolve => {
     setTimeout(() => {

@@ -7,7 +7,7 @@ button.addEventListener('click',  () => asyncCall(parseInt(secondsInput.value)))
 
 let remaining = document.querySelector("#remaining")
 
-// this fn is called each iteration
+// this fn is called each iteration to countdown the second
 function resolveAfter1Second() {
   return new Promise(resolve => {
     setTimeout(() => {

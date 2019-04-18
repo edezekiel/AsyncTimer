@@ -20,6 +20,7 @@ function resolveAfter1Second() {
 async function asyncCall(x) {
    remaining.innerHTML = x;
   while (x > 0) {
+    // await lets us write this fn so that it looks syncronous
     let result = await resolveAfter1Second();
     x--;
     remaining.innerHTML = x;

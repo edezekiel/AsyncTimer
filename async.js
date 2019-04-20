@@ -16,7 +16,6 @@ function resolveAfter1Second() {
   });
 }
 
-// decrements for each second.
 async function asyncCall(x) {
    remaining.innerHTML = x;
   while (x > 0) {
